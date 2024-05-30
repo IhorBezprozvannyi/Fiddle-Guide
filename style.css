@@ -1,0 +1,186 @@
+*{
+    font-family: Permanent Marker;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+body{
+    background-color: #242424;
+    box-shadow: inset 0 0 100px black;
+}
+h2{
+    text-align: start;
+    margin-top: 10px;
+    margin-left: 100px;
+    font-weight: 500;
+    font-size: 40px;
+}
+.HeaderDiv{
+    z-index: 2;
+    background-color:  #202020;
+    top: 0;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    height: 75px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.637);
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.452);
+}
+.TitleDiv{
+    flex: 3;
+    justify-content: start;
+}
+.NavigationDiv{
+    display: flex;
+    flex: 2;
+    flex-shrink: 0;
+}
+.NavigationDiv p{
+    display: inline-block;
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+    justify-content: space-between;
+    transition: font-size 0.15s;
+}
+.NavigationDiv p:hover{
+    cursor: pointer;
+    font-size: 25px;
+}
+
+
+.StartDiv{
+    display: flex;
+    flex-direction: row;
+    vertical-align: top;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.EntranceDiv{
+    display: inline-block;
+    z-index: 0;
+    background-color: black;
+    border: 5px solid black;
+    border-radius: 10px;
+    margin-left: 100px;
+    width: 1250px;
+    height: 700px;
+    position: relative;
+}
+.EntranceDiv img:hover{
+    transition: 0.3s;
+    filter: brightness(40%);
+}
+.EntranceDiv img{
+    z-index: 0;
+    width: 100%;    
+    filter: brightness(50%);
+    transition: filter 0.2s;
+}
+.GreetingsDiv{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.EntranceTextDiv{
+    z-index: 1;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    line-height: 30px;
+}
+.HighlightRed{
+    font-size: 25px;
+    color: rgb(156, 17, 17);
+}
+.HighlightBlue{
+    font-size: 25px;
+    color: rgb(48, 146, 212);
+}
+.AbilitiesDiv{
+    margin-right: 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    text-align: center;
+    border:5px solid black;
+    background-color:rgb(19, 1, 16);
+    box-shadow: inset 0 0 30px black;
+}
+.AbilityDiv{
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 3px rgb(73, 20, 20) solid;
+    padding: 10px 10px;
+    background-color: rgba(44, 12, 12, 0.377);
+}
+.AbilityDiv:hover{
+    background-color: rgba(46, 13, 13, 0.692);
+    cursor: pointer;
+}
+.AbilityDiv img{
+    border: 2px solid black;
+    box-shadow: 0 0 10px black;
+}
+.AbilityDiv h4{
+    margin: 20px 20px 0 20px ;
+    font-weight: 500;
+}
+.AbilitiesTitleDiv h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+
+
+
+.DisplayDiv{
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 700px 700px  ;
+    column-gap: 100px;
+    row-gap: 100px;
+}
+.PreviewDiv{
+    position: relative;
+    width: 700px;
+    height: 406px;
+    border: 5px solid rgba(0, 0, 0, 0.473);
+    border-radius: 10px;
+    transition: border 0.15s, color 0.15s;
+    color: rgb(219, 219, 219);
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+.PreviewDiv:hover{
+    cursor: pointer;
+    border: 5px solid black;
+    color: rgb(172, 172, 172);
+}
+.PreviewDiv img{
+    border-radius: 4px;
+    object-fit: fill;
+    filter: brightness(100%);
+    width: 100%;
+    transition: filter 0.15s;
+    filter: brightness(50%);
+}
+.PreviewDiv img:hover{
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.452);
+    filter: brightness(60%);
+}
+.AbsoluteTextDiv{
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+}
