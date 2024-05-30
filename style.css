@@ -2,10 +2,12 @@
     font-family: Permanent Marker;
     padding: 0;
     margin: 0;
-    color: white;
+    color: rgb(225, 225, 225);
 }
 body{
-    background-color: #242424;
+    padding-left: 100px;
+    padding-top: 75px;
+    background-color: #202020;
     box-shadow: inset 0 0 100px black;
 }
 h2{
@@ -17,9 +19,11 @@ h2{
 }
 .HeaderDiv{
     z-index: 2;
-    background-color:  #202020;
+    background-color:  #242424;
     top: 0;
-    position: sticky;
+    left: 0;
+    right: 0;
+    position: fixed;
     display: flex;
     flex-direction: row;
     height: 75px;
@@ -46,8 +50,45 @@ h2{
     transition: font-size 0.15s;
 }
 .NavigationDiv p:hover{
+    transition: font-size 0.15s;
     cursor: pointer;
     font-size: 25px;
+}
+
+
+.SidebarDiv{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+    top: 75px;
+    bottom: 0;
+    left: 0;
+    background-color: #242424;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.452);
+}
+.IconDiv{
+    padding: 5px;
+    margin-top: 40px;
+    background-color: #323232;
+    border: 4px solid black;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.IconDiv:hover{
+    background-color: rgb(225, 225, 225);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+    border-color: rgb(56, 56, 56);
+    transition: 0.2s;
+}
+
+.SidebarDiv img{
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 30px;
+    
 }
 
 
@@ -75,7 +116,10 @@ h2{
 }
 .EntranceDiv img{
     z-index: 0;
-    width: 100%;    
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;  
     filter: brightness(50%);
     transition: filter 0.2s;
 }
@@ -121,6 +165,7 @@ h2{
     border: 3px rgb(73, 20, 20) solid;
     padding: 10px 10px;
     background-color: rgba(44, 12, 12, 0.377);
+    transition: 0.15s;
 }
 .AbilityDiv:hover{
     background-color: rgba(46, 13, 13, 0.692);
@@ -129,10 +174,17 @@ h2{
 .AbilityDiv img{
     border: 2px solid black;
     box-shadow: 0 0 10px black;
+    transition: 0.15s;
 }
 .AbilityDiv h4{
     margin: 20px 20px 0 20px ;
     font-weight: 500;
+    min-width: 200px;
+    transition: 0.15s;  
+}
+.AbilityDiv h4:hover{
+    color: rgb(156, 17, 17);
+    transition: 0.15s;
 }
 .AbilitiesTitleDiv h3{
     font-size: 40px;
@@ -163,6 +215,7 @@ h2{
     justify-content: center;
 }
 .PreviewDiv:hover{
+    transition: border 0.15s, color 0.15s;
     cursor: pointer;
     border: 5px solid black;
     color: rgb(172, 172, 172);
@@ -178,9 +231,24 @@ h2{
 .PreviewDiv img:hover{
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.452);
     filter: brightness(60%);
+    transition: filter 0.15s;
 }
 .AbsoluteTextDiv{
     position: absolute;
     bottom: 0;
     right: 25px;
+}
+
+
+
+.BottomDiv{
+    margin-top: 30px;
+    display: flex;
+    text-align: center;
+    border-top: 2px solid black ;
+}
+.BottomDiv p{
+    flex: 1;
+    margin: 70px 0 50px 0;
+    font-size: 20px ;
 }
