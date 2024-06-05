@@ -5,6 +5,7 @@
     color: rgb(225, 225, 225);
 }
 body{
+    box-sizing: border-box;
     padding-left: 100px;
     padding-top: 75px;
     background-color: #202020;
@@ -30,9 +31,26 @@ h2{
     border-bottom: 1px solid rgba(0, 0, 0, 0.637);
     box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.452);
 }
+.HeaderDiv img{
+    margin-left: 12.5px;
+    border: 3px solid black;
+    border-radius: 50%;
+    filter: brightness(90%);
+    width: 65px;
+    height: 65px;
+    margin-top: 2.5px;
+    transition: 0.15s;
+}
+.HeaderDiv img:hover{
+    filter: brightness(100%);
+    transition: 0.15s;
+}
 .TitleDiv{
     flex: 3;
     justify-content: start;
+}
+.TitleDiv h2{
+    margin-left: 15px;
 }
 .NavigationDiv{
     display: flex;
@@ -47,12 +65,13 @@ h2{
     margin-top: 20px;
     font-size: 20px;
     justify-content: space-between;
-    transition: font-size 0.15s;
+    transition: 0.15s;
 }
 .NavigationDiv p:hover{
-    transition: font-size 0.15s;
+    transition: 0.15s;
     cursor: pointer;
     font-size: 25px;
+    color: rgb(156, 17, 17);
 }
 
 
@@ -61,18 +80,21 @@ h2{
     position: fixed;
     align-items: center;
     flex-direction: column;
+    justify-content: space-evenly;
     width: 100px;
     top: 75px;
     bottom: 0;
     left: 0;
+    z-index: 2;
     background-color: #242424;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.452);
 }
 .IconDiv{
     padding: 5px;
-    margin-top: 40px;
-    background-color: #323232;
+    margin-top: 20px;
+    background-color: #404040;
     border: 4px solid black;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.493);
     border-radius: 50%;
     transition: 0.5s;
 }
@@ -98,30 +120,35 @@ h2{
     vertical-align: top;
     justify-content: space-between;
     margin-top: 50px;
+
 }
 .EntranceDiv{
-    display: inline-block;
     z-index: 0;
     background-color: black;
     border: 5px solid black;
     border-radius: 10px;
     margin-left: 100px;
-    width: 1250px;
-    height: 700px;
+    width: 70%;
+    height: 70%;
     position: relative;
+    margin-right: 10px;
+
 }
-.EntranceDiv img:hover{
-    transition: 0.3s;
-    filter: brightness(40%);
+.EntranceDiv h2{
+    margin-left: 20px;
+    font-size: 30px;
 }
 .EntranceDiv img{
     z-index: 0;
     width: 100%;
     height: 100%;
-
     border-radius: 10px;  
     filter: brightness(50%);
     transition: filter 0.2s;
+}
+.EntranceDiv img:hover{
+    transition: 0.3s;
+    filter: brightness(60%);
 }
 .GreetingsDiv{
     z-index: 1;
@@ -156,6 +183,7 @@ h2{
     border:5px solid black;
     background-color:rgb(19, 1, 16);
     box-shadow: inset 0 0 30px black;
+    padding-bottom: 10px;
 }
 .AbilityDiv{
     display: flex;
@@ -249,6 +277,8 @@ h2{
 }
 .BottomDiv p{
     flex: 1;
-    margin: 70px 0 50px 0;
+    margin: 40px 0 40px 0;
     font-size: 20px ;
 }
+
+

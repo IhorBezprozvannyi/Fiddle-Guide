@@ -1,0 +1,283 @@
+
+@media screen and (max-width: 1600px){
+    *{
+        font-family: Permanent Marker;
+        padding: 0;
+        margin: 0;
+        color: rgb(225, 225, 225);
+    }
+    body{
+        box-sizing: border-box;
+        padding-left: 100px;
+        padding-top: 75px;
+        background-color: #202020;
+        box-shadow: inset 0 0 100px black;
+    }
+    h2{
+        text-align: start;
+        margin-top: 10px;
+        margin-left: 100px;
+        font-weight: 500;
+        font-size: 40px;
+    }
+    p{
+        font-size: 1vw;
+    }
+    .HeaderDiv{
+        z-index: 2;
+        background-color:  #242424;
+        top: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        height: 75px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.637);
+        box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.452);
+    }
+    .HeaderDiv img{
+        margin-left: 12.5px;
+        border: 3px solid black;
+        border-radius: 50%;
+        filter: brightness(90%);
+        width: 65px;
+        height: 65px;
+        margin-top: 2.5px;
+        transition: 0.15s;
+    }
+    .HeaderDiv img:hover{
+        filter: brightness(100%);
+        transition: 0.15s;
+    }
+    .TitleDiv{
+        flex: 3;
+        justify-content: start;
+    }
+    .TitleDiv h2{
+        margin-left: 15px;
+    }
+    .NavigationDiv{
+        display: flex;
+        flex: 2;
+        flex-shrink: 0;
+    }
+    .NavigationDiv p{
+        display: inline-block;
+        flex: 1;
+        margin-right: 20px;
+        margin-left: 10px;
+        margin-top: 20px;
+        font-size: 20px;
+        justify-content: space-between;
+        transition: 0.15s;
+    }
+    .NavigationDiv p:hover{
+        transition: 0.15s;
+        cursor: pointer;
+        font-size: 25px;
+        color: rgb(156, 17, 17);
+        text-shadow: -1px 3px 5px black;
+    }
+    
+    
+    .SidebarDiv{
+        display: flex;
+        position: fixed;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100px;
+        top: 75px;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        background-color: #242424;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.452);
+    }
+    .IconDiv{
+        padding: 5px;
+        margin-top: 20px;
+        background-color: #404040;
+        border: 4px solid black;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.493);
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+    .IconDiv:hover{
+        background-color: rgb(225, 225, 225);
+        box-shadow: 0 0 20px rgb(0, 0, 0);
+        border-color: rgb(56, 56, 56);
+        transition: 0.2s;
+    }
+    
+    .SidebarDiv img{
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 30px;
+        
+    }
+    
+    
+    .StartDiv{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .EntranceDiv{
+        display: flex;
+        justify-content: center;
+        z-index: 0;
+        background-color: black;
+        border: 5px solid black;
+        border-radius: 10px;
+        position: relative;
+    }
+    .EntranceDiv img{
+        z-index: 0;
+        width: 100%;
+        height: 80%;
+        border-radius: 10px;  
+        filter: brightness(50%);
+        transition: filter 0.2s;
+    }
+    .EntranceDiv img:hover{
+        transition: 0.3s;
+        filter: brightness(60%);
+    }
+    .GreetingsDiv{
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .EntranceTextDiv{
+        z-index: 1;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .HighlightRed{
+        font-size: 20px;
+        color: rgb(156, 17, 17);
+    }
+    .HighlightBlue{
+        font-size: 20px;
+        color: rgb(48, 146, 212);
+    }
+    .AbilitiesDiv{
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
+        text-align: center;
+        border:5px solid black;
+        background-color:rgb(19, 1, 16);
+        box-shadow: inset 0 0 30px black;
+    }
+    .AbilityDiv{
+        display: flex;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 10px;
+        border: 3px rgb(73, 20, 20) solid;
+        padding: 10px 10px;
+        background-color: rgba(44, 12, 12, 0.377);
+        transition: 0.15s;
+    }
+    .AbilityDiv:hover{
+        background-color: rgba(46, 13, 13, 0.692);
+        cursor: pointer;
+    }
+    .AbilityDiv img{
+        width: 17.25%;
+        border: 2px solid black;
+        box-shadow: 0 0 10px black;
+        transition: 0.15s;
+    }
+    .AbilityDiv h4{
+        margin: 10px 20px 0 0 ;
+        font-weight: 500;
+        min-width: 200px;
+        transition: 0.15s; 
+        font-size: 15px; 
+    }
+    .AbilityDiv h4:hover{
+        color: rgb(156, 17, 17);
+        transition: 0.15s;
+    }
+    .AbilitiesTitleDiv h3{
+        font-size: 40px;
+        font-weight: 500;
+    }
+    
+    
+    
+    
+    .DisplayDiv{
+        margin-top: 50px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 560px 560px  ;
+        column-gap: 80px;
+        row-gap: 80px;
+    }
+    .PreviewDiv{
+        position: relative;
+        width: 560px;
+        height: 324.8px;
+        border: 5px solid rgba(0, 0, 0, 0.473);
+        border-radius: 10px;
+        transition: border 0.15s, color 0.15s;
+        color: rgb(219, 219, 219);
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .PreviewDiv:hover{
+        transition: border 0.15s, color 0.15s;
+        cursor: pointer;
+        border: 5px solid black;
+        color: rgb(172, 172, 172);
+    }
+    .PreviewDiv img{
+        border-radius: 4px;
+        object-fit: fill;
+        filter: brightness(100%);
+        width: 100%;
+        transition: filter 0.15s;
+        filter: brightness(50%);
+    }
+    .PreviewDiv img:hover{
+        box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.452);
+        filter: brightness(60%);
+        transition: filter 0.15s;
+    }
+    .AbsoluteTextDiv{
+        position: absolute;
+        bottom: 0;
+        right: 25px;
+    }
+    .AbsoluteTextDiv p{
+        font-size: 25px;
+    }
+    
+    
+    
+    .BottomDiv{
+        margin-top: 30px;
+        display: flex;
+        text-align: center;
+        border-top: 2px solid black ;
+    }
+    .BottomDiv p{
+        flex: 1;
+        margin: 40px 0 40px 0;
+        font-size: 20px ;
+    }
+}
