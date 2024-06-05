@@ -72,6 +72,7 @@ h2{
     cursor: pointer;
     font-size: 25px;
     color: rgb(156, 17, 17);
+    text-shadow: -1px 3px 5px black;
 }
 
 
