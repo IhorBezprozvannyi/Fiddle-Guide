@@ -1,0 +1,94 @@
+.HeaderDiv{
+    z-index: 2;
+    background-color:  #24242471;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    height: 4vw;
+    border-bottom: 0.1vw solid rgba(0, 0, 0, 0.637);
+    box-shadow: 0.5vw 0px 1vw rgba(0, 0, 0, 0.452);
+}
+.HeaderDiv img{
+    margin-left: 0.5vw;
+    border: 0.15vw solid black;
+    border-radius: 50%;
+    filter: brightness(90%);
+    width: 3.5vw;
+    height: 3.5vw;
+    margin-top: 0.1vw;
+    transition: 0.15s;
+}
+.HeaderDiv img:hover{
+    filter: brightness(100%);
+    transition: 0.15s;
+}
+.TitleDiv{
+    flex: 3;
+    justify-content: start;
+}
+.TitleDiv h2{
+    margin-left: 1vw;
+}
+.NavigationDiv{
+    display: flex;
+    flex: 2;
+    flex-shrink: 0;
+}
+.NavigationDiv p{
+    display: inline-block;
+    flex: 1;
+    margin-right: 1vw;
+    margin-left: 0.5vw;
+    margin-top: 1vw;
+    font-size: 1vw;
+    justify-content: space-between;
+    transition: 0.15s;
+}
+.NavigationDiv p:hover{
+    transition: 0.15s;
+    cursor: pointer;
+    font-size: 1.2vw;
+    color: rgb(156, 17, 17);
+    text-shadow: -0.1vw 0.15vw 0.25vw black;
+}
+
+
+
+.SidebarDiv{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 5vw;
+    top: 4vw;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #24242400;
+    box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.452);
+}
+.IconDiv{
+    padding: 0.2vw;
+    margin-top: 1vw;
+    background-color: #b9b9b95e;
+    border: 0.3vw solid black;
+    box-shadow: 0 0 0.5vw rgba(255, 255, 255, 0.493);
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.IconDiv:hover{
+    background-color: rgb(225, 225, 225);
+    box-shadow: 0 0 1vw rgb(0, 0, 0);
+    border-color: rgb(56, 56, 56);
+    transition: 0.2s;
+}
+
+.SidebarDiv img{
+    margin: 0.5vw 0.5vw 0.2vw 0.5vw;
+    width: 1.5vw;
+    
+}

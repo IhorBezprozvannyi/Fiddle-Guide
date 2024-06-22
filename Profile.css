@@ -1,0 +1,73 @@
+.img{
+    width: 100%;
+    filter: brightness(80%);
+}
+.ContainerDiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+}
+.SignInDiv{
+    display: grid;
+    grid-template-columns: 20vw;
+    justify-content: center;
+    text-align: center;
+    border: rgb(0, 0, 0) 0.25vw solid;
+    border-radius: 1vw;
+    padding: 2vw;
+    margin: 10.2vw;
+    background-color: rgba(0, 0, 0, 0.315);
+    box-shadow: 0 0 1vw rgba(0, 0, 0, 0.781);
+}
+.SignInDiv h3{
+    text-shadow: 0 0 0.5vw rgb(0, 0, 0);
+    font-weight: 300;
+    color: #c9b48f;
+    font-size: 1.5vw;
+}
+.login{
+    margin-top: 2vw;
+}
+.pass{
+    margin-top: 1vw;
+}
+.SignInDiv p{
+    text-shadow: 0 0 0.5vw rgb(0, 0, 0);
+    color:#c2ae8a;   
+    font-size: 1vw;
+}
+.SignInDiv input{
+    height: 2vw;
+    border: 0.2vw solid rgba(0, 0, 0, 0.795);
+    border-radius: 0.25vw;
+    background-color: rgba(0, 0, 0, 0.137);
+    font-weight: 300;
+    color: black;
+    font-size: 1vw;
+}
+.SignInDiv input:focus{
+    outline: none;
+    border: 0.2vw solid rgba(0, 0, 0, 0);
+}
+.SignInDiv button{
+    border: 0.2vw solid rgba(0, 0, 0, 0.795);
+    border-radius: 0.25vw;
+    color: black;
+    font-size: 1vw;
+    background-color: rgba(83, 0, 0, 0.212);
+    height: 2vw;
+    width: 6vw;
+    margin-top: 0.5vw;
+    margin-left: 7vw;
+}
+.SignInDiv button:hover{
+    cursor: pointer;
+    background-color: rgba(105, 0, 0, 0.356);
+}
+.SignInDiv button:active{
+    background-color: rgb(0, 0, 0, 0.151);
+    color: rgb(97, 0, 0);
+}
