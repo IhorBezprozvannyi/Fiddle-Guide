@@ -1,6 +1,8 @@
-.img{
-    width: 100%;
-    filter: brightness(80%);
+body{
+    background-image: url(fiddleSketch.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
 }
 .ContainerDiv{
     position: absolute;
@@ -41,16 +43,16 @@
 }
 .SignInDiv input{
     height: 2vw;
-    border: 0.2vw solid rgba(0, 0, 0, 0.795);
+    border: 0.2vw solid rgba(0, 0, 0, 0);
     border-radius: 0.25vw;
-    background-color: rgba(0, 0, 0, 0.137);
+    background-color: rgba(0, 0, 0, 0.267);
     font-weight: 300;
-    color: black;
+    color: #d6c199;
     font-size: 1vw;
 }
 .SignInDiv input:focus{
     outline: none;
-    border: 0.2vw solid rgba(0, 0, 0, 0);
+    border: 0.2vw solid rgba(0, 0, 0, 0.795);
 }
 .SignInDiv button{
     border: 0.2vw solid rgba(0, 0, 0, 0.795);
