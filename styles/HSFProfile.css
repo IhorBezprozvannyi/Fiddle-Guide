@@ -74,9 +74,9 @@
 .IconDiv{
     padding: 0.2vw;
     margin-top: 1vw;
-    background-color: #b9b9b95e;
-    border: 0.3vw solid black;
-    box-shadow: 0 0 0.5vw rgba(255, 255, 255, 0.493);
+    background-color: #ceb9939a;
+    border: 0.3vw solid #1a1712;
+    box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.493);
     border-radius: 50%;
     transition: 0.5s;
 }
