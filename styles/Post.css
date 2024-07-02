@@ -1,0 +1,62 @@
+body{
+    background-image: url(PostBack.jpg);
+}
+.ContainerDiv{
+    padding-top: 6vw;
+    position: relative;
+}
+h1{
+    position: absolute;
+    top: 0;
+    right: 40%;
+    font-size: 2vw;
+    color: rgb(216, 240, 240);
+    text-shadow: 0 0 1vw rgb(0, 0, 0);
+    margin: 1vw 0 2vw 2vw; 
+}
+.PostGridDiv{
+    display: grid;
+    grid-template-columns: 0.5fr;
+    justify-content: center;
+    height:39.65vw;
+}
+.PostGridDiv input{
+    color:rgb(216, 240, 240);
+    font-size: 1vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.493);
+    border: 0.1vw solid rgba(84, 119, 119, 0.452);
+    border-radius: 0.5vw;
+    margin: 1vw 0 0 0;
+    box-sizing: border-box;
+}
+.PostGridDiv input:focus{
+    outline: none;
+    border: 0.1vw solid rgb(216, 240, 240);
+}
+.PostGridDiv input::placeholder{
+    color: rgba(216, 240, 240, 0.733);
+}
+.Title, .Theme{
+    height: 3vw;
+}
+.PostInsidesText{
+    color:rgb(216, 240, 240);
+    font-size: 1vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.493);
+    border: 0.1vw solid rgba(84, 119, 119, 0.452);
+    border-radius: 0.5vw;
+    box-sizing: border-box;
+    font-size: 1vw;
+    resize: none;
+    height: 25vw;
+    margin-bottom: 2vw;
+}
+.PostInsidesText:focus{
+    outline: none;
+    border: 0.1vw solid rgb(216, 240, 240);
+}
+.PostInsidesText::placeholder{
+    color: rgba(216, 240, 240, 0.733);
+}
