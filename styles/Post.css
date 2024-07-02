@@ -1,5 +1,8 @@
 body{
     background-image: url(PostBack.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
 }
 .ContainerDiv{
     padding-top: 6vw;

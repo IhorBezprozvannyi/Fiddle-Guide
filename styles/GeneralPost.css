@@ -1,0 +1,19 @@
+*{
+    font-family: Permanent Marker;
+    padding: 0;
+    margin: 0;
+    color: rgb(216, 240, 240);;
+}
+body{
+    box-sizing: border-box;
+    background-color: #202020;
+    padding-left: 5vw;
+    padding-top: 4vw;
+}
+h2{
+    text-align: start;
+    margin-top: 0.5vw;
+    margin-left: 0.25vw;
+    font-weight: 500;
+    font-size: 2vw;
+}
