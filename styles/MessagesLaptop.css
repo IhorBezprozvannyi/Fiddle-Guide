@@ -1,0 +1,8 @@
+@media screen and (max-width: 1600px){
+    .ChatsGridDiv{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1vw;
+        justify-content: space-evenly;
+    }
+}

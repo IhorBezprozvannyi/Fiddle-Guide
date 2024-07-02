@@ -1,0 +1,51 @@
+body{
+    background-image: url(MessagesBack.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+.ChatsGridDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1vw;
+    justify-content: space-evenly;
+}
+.ChatDiv{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 1vw;
+    border: 0.2vw solid black;
+    border-radius: 3vw;
+    margin: 1vw;
+    background-color: rgba(0, 0, 0, 0.548);
+}
+.ProfileInfoDiv{
+    display: flex;
+    align-items: center;
+}
+.UserName{
+    font-size: 1.3vw;
+    font-weight: 300;
+}
+.TextBoxDiv{
+    color: #e5a8e76c;
+    text-align: center;
+    width: 10vw ;
+    height: 1vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.LatestMessage{
+    margin-left: 0.5vw;
+    font-size: 0.8vw;
+
+}
+.ProfilePicture{
+    width: 5vw;
+    margin: 0 1vw 0 1vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
