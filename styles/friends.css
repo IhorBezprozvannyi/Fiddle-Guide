@@ -1,0 +1,60 @@
+body{
+    background-image: url(../img/friends_back.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center;
+    background-size: 100%;
+}
+.ContainerDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.ContainerDiv input{
+    margin-top: 5vw;
+    width: 90%;
+    height: 3vw;
+    background-color: rgba(0, 0, 0, 0.274);
+    border: 0.1vw solid rgba(255, 255, 255, 0.322);
+    border-radius: 2vw;
+    font-size: 1vw;
+    padding-left: 1vw;
+}
+.ContainerDiv input:focus{
+    outline: none;
+    border-color: white;
+}
+.ContainerDiv input::placeholder{
+    text-align: center;
+    font-size: 1vw;
+    color: #e7d0a8;
+}
+.FriendsListDiv{
+    margin-top: 7vw;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1vw;
+    justify-content: space-evenly;
+}
+.FriendDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 1vw;
+    border: 0.2vw solid black;
+    border-radius: 3vw;
+    margin: 1vw;
+    background-color: rgba(0, 0, 0, 0.548);
+}
+.UserName{
+    font-size: 1.3vw;
+    font-weight: 300;
+}
+.ProfilePicture{
+    width: 5vw;
+    margin: 0 1vw 0 1vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

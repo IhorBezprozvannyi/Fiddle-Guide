@@ -1,9 +1,9 @@
 body{
-    background-image: url(MessagesBack.jpg);
+    background-image: url(../img/messages_back.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-position: center;
-    background-size: 100% 115%;
+    background-size: 100%;
 }
 .ChatsGridDiv{
     display: grid;
